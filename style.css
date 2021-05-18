@@ -26,12 +26,13 @@ body {
 
 .logo-img{
     background-image: url("img/logo.jpg");
-    background-size: 150%;
+    background-repeat: no-repeat;
+    background-size: contain;
     background-position: center;
-    border-radius: 50%;
     width: 100px;
     height: 100px;
     margin-bottom: -12px;
+    filter: invert(100%);
 }
 
 .contacts{
@@ -61,6 +62,10 @@ body {
     display: inline-block;
     text-align: center;
     padding: 10px;
+}
+
+.content ul li:hover{
+    color: rgb(135,234,148);
 }
 
 .content ul li:first-child{
